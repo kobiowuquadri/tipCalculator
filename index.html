@@ -66,7 +66,7 @@
     <div class="container">
         <div class="label">
             <p><label for="billAmount">Bill&nbsp;Amount:</label></p>
-            <p><label for="%tip">Percentage&nbsp;Tip:</label></p>
+            <p><label for="%tip">Percentage&nbsp;Tip:(%)</label></p>
             <p><label for="tipAmount">Tip&nbsp;Amount</label></p>
             <p><label for="total">Total</label></p>
         </div>
@@ -86,12 +86,14 @@
             let percentTip = Number(document.getElementById("percentTip").value);
 
             let tipAmount = Number(document.getElementById("tipAmount").value);
+          
 
             let total = billAmount + percentTip + tipAmount;
 
             document.getElementById("total").value = total;
 
         }
+        console.log(tipAmount);
 
     </script>
 </body>
